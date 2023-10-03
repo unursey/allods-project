@@ -1,0 +1,56 @@
+
+  $white-color: #FFFFFF;
+  $black-color: #000000;
+
+  $blue-color: #416DF4;
+  $red-color: #671D00;
+  $yellow-color: #FCFF00;
+
+@mixin maxtop {
+  @media (min-width: 1920px) {
+  @content
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 1150px) {
+  @content
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 860px) {
+  @content
+  }
+}
+
+@mixin  mintop{
+  @media (max-width: 660px) {
+  @content
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 520px) {
+  @content
+  }
+}
+
+@mixin font($name, $weight) {
+  font: {
+    family: $name;
+    weight: $weight;
+    display: swap;
+  }
+  src: url("../fonts/#{ $name }-#{ $weight }.woff2") format("woff2"),
+    url("../fonts/#{ $name }-#{ $weight }.woff") format("woff"),
+}
+
+@mixin bg-full ($url) {
+  background: {
+    image: url($url);
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  };
+}

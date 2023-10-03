@@ -1,0 +1,9 @@
+
+@import 'components/normalize';
+@include normalize();
+@import 'components/var';
+@import "components/fonts";
+@import "components/basic";
+@import "components/banner";
+@import "components/present";
+
