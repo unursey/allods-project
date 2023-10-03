@@ -44,6 +44,7 @@
     justify-content: center;
     flex-basis: 50%;
     & img {
+      align-self: flex-start;
       width: 440px;
       object-position: center;
       object-fit: contain;
